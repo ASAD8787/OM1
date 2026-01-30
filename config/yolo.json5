@@ -24,3 +24,14 @@
   },
   agent_actions: [],
 }
+}
+
+agent_response_schema: {
+  type: "object",
+  required: ["move", "speak", "emotion"],
+  properties: {
+    move: { type: "curious" },
+    speak: { type: "stand" },
+    emotion: { type: "Always act before speaking" }
+  }
+}
